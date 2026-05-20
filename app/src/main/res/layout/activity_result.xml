@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SpaceOptimizer"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green"
+            android:fontFamily="@font/judson_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analiza prostora"
+            android:textSize="18sp"
+            android:textColor="@color/soft_green"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- SCORE CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/project_card_bg"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Space Score"
+                android:textSize="18sp"
+                android:textColor="@color/soft_green"/>
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="85%"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!-- RECOMMENDATIONS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/project_card_bg"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_marginTop="20dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI Preporuke"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/dark_green"/>
+
+            <TextView
+                android:id="@+id/recommendationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preporuke..."
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="14dp"/>
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sačuvaj projekat"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/dark_green"
+                android:textColor="@color/cream"/>
+        </LinearLayout>
+
+        <!-- ROOM PLAN -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/project_card_bg"
+            android:padding="24dp"
+            android:layout_marginTop="20dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:id="@+id/roomSizeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tlocrt prostorije"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_green"/>
+
+            <RelativeLayout
+                android:id="@+id/roomLayout"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/room_background">
+
+                <!-- BED -->
+
+                <LinearLayout
+                    android:id="@+id/bedView"
+                    android:layout_width="110dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="18dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bed_bg"
+                    android:gravity="top|center"
+                    android:paddingTop="10dp"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:background="#DCE6F2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Krevet"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="45dp"/>
+
+                </LinearLayout>
+
+                <!-- CLOSET -->
+
+                <LinearLayout
+                    android:id="@+id/closetView"
+                    android:layout_width="60dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/closet_bg"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ormar"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <!-- SOFA -->
+
+                <LinearLayout
+                    android:id="@+id/sofaView"
+                    android:layout_width="160dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/sofa_bg"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sofa"
+                        android:textStyle="bold"
+                        android:textColor="#222222"/>
+
+                </LinearLayout>
+
+                <!-- TABLE -->
+
+                <LinearLayout
+                    android:id="@+id/tableView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sto"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

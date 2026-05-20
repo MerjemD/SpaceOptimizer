@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/cream">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odabir namještaja"
+            android:textSize="32sp"
+            android:fontFamily="@font/judson_bold"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green"/>
+
+        <!-- KREVET -->
+        <CheckBox
+            android:id="@+id/bedCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Krevet"
+            android:textSize="20sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/bedWidth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Širina (m)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/bedLength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dužina (m)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+        </LinearLayout>
+
+        <!-- SOFA -->
+        <CheckBox
+            android:id="@+id/sofaCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sofa"
+            android:textSize="20sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/sofaWidth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Širina (m)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/sofaLength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dužina (m)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+        </LinearLayout>
+
+        <!-- STO -->
+        <CheckBox
+            android:id="@+id/tableCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sto"
+            android:textSize="20sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tableWidth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Širina (m)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/tableLength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dužina (m)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+        </LinearLayout>
+
+        <!-- ORMAR -->
+        <CheckBox
+            android:id="@+id/closetCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ormar"
+            android:textSize="20sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/closetWidth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Širina (m)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/closetLength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dužina (m)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+        </LinearLayout>
+
+        <!-- TV KOMODA (Ispravljeno: Dodata polja za unos) -->
+        <CheckBox
+            android:id="@+id/tvCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV Komoda"
+            android:textSize="20sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tvWidth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Širina (m)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/tvLength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dužina (m)"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+        </LinearLayout>
+
+        <!-- BUTTON -->
+        <Button
+            android:id="@+id/analyzeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analiziraj prostor"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/cream"
+            android:backgroundTint="@color/dark_green"
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+</ScrollView>
