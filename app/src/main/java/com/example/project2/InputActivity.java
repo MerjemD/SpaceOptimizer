@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class InputActivity extends AppCompatActivity {
 
-    EditText widthInput, lengthInput;
+    EditText widthInput, lengthInput, projectNameInput;
     Button nextBtn;
 
     @Override
@@ -19,29 +19,71 @@ public class InputActivity extends AppCompatActivity {
 
         widthInput = findViewById(R.id.widthInput);
         lengthInput = findViewById(R.id.lengthInput);
+        projectNameInput = findViewById(R.id.projectNameInput);
+
         nextBtn = findViewById(R.id.nextBtn);
 
         nextBtn.setOnClickListener(v -> {
 
-            String width = widthInput.getText().toString().trim();
-            String length = lengthInput.getText().toString().trim();
+            String width =
+                    widthInput.getText().toString().trim();
+
+            String length =
+                    lengthInput.getText().toString().trim();
+
+            String projectName =
+                    projectNameInput.getText().toString().trim();
+
+            if (projectName.isEmpty()) {
+
+                projectNameInput.setError(
+                        "Unesite naziv projekta"
+                );
+
+                return;
+            }
 
             if (width.isEmpty()) {
-                widthInput.setError("Unesite širinu");
+
+                widthInput.setError(
+                        "Unesite širinu"
+                );
+
                 return;
             }
 
             if (length.isEmpty()) {
-                lengthInput.setError("Unesite dužinu");
+
+                lengthInput.setError(
+                        "Unesite dužinu"
+                );
+
                 return;
             }
 
-            Intent intent = new Intent(InputActivity.this, FurnitureActivity.class);
+            Intent intent =
+                    new Intent(
+                            InputActivity.this,
+                            FurnitureActivity.class
+                    );
 
-            intent.putExtra("width", width);
-            intent.putExtra("length", length);
+            intent.putExtra(
+                    "projectName",
+                    projectName
+            );
+
+            intent.putExtra(
+                    "width",
+                    width
+            );
+
+            intent.putExtra(
+                    "length",
+                    length
+            );
 
             startActivity(intent);
+
         });
     }
 }

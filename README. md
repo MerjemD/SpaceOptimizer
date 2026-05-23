@@ -1,0 +1,49 @@
+Opis projekta
+SpaceOptimizer je Android aplikacija razvijena u okviru projektnog zadatka za predmet Razvoj mobilnih aplikacija.
+
+Cilj aplikacije je pomoći korisnicima pri organizaciji prostora unosom dimenzija prostorije i odabirom namještaja. Aplikacija analizira iskorištenost prostora i generiše jednostavne preporuke za raspored namještaja.
+
+Korisnik može kreirati i spremati projekte, pregledavati prethodno sačuvane projekte te ih pretraživati pomoću search funkcionalnosti.
+
+Glavne funkcionalnosti
+    • Splash Screen
+    • Login i registracija korisnika
+    • Firebase autentifikacija
+    • Kreiranje novih projekata
+    • Unos dimenzija prostorije
+    • Odabir namještaja
+    • Analiza prostora
+    • Space Score sistem
+    • Čuvanje projekata
+    • Search funkcionalnost
+    • Profile ekran
+    • Settings ekran
+
+Korištene tehnologije
+• Java
+• Android Studio
+• Firebase Authentication
+• XML Layouts
+• SharedPreferences
+• Android SDK
+
+Pokretanje projekta
+1. Klonirati projekat sa GitHub-a
+2. Otvoriti projekat u Android Studio
+3. Dodati google-services.json fajl
+4. Sync Gradle
+5. Pokrenuti aplikaciju na emulatoru ili telefonu
+
+Firebase podešavanje
+1. Kreirati Firebase projekat
+2. Uključiti Email/Password Authentication
+3. Preuzeti google-services.json
+4. Dodati fajl u app folder
+5. Sync projekat
+
+Buduća poboljšanja
+• Room baza podataka
+• Drag & Drop namještaj
+• Cloud spremanje projekata
+• Naprednije AI preporuke
+• Više tipova namještaja

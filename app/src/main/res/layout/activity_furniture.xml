@@ -11,7 +11,6 @@
         android:orientation="vertical"
         android:padding="24dp">
 
-        <!-- TITLE -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,7 +20,6 @@
             android:textStyle="bold"
             android:textColor="@color/dark_green"/>
 
-        <!-- KREVET -->
         <CheckBox
             android:id="@+id/bedCheck"
             android:layout_width="wrap_content"
@@ -42,6 +40,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Širina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/dark_green"/>
 
@@ -51,11 +51,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Dužina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/dark_green"/>
         </LinearLayout>
 
-        <!-- SOFA -->
         <CheckBox
             android:id="@+id/sofaCheck"
             android:layout_width="wrap_content"
@@ -76,6 +77,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Širina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/dark_green"/>
 
@@ -85,11 +88,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Dužina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/dark_green"/>
         </LinearLayout>
 
-        <!-- STO -->
         <CheckBox
             android:id="@+id/tableCheck"
             android:layout_width="wrap_content"
@@ -110,6 +114,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Širina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/dark_green"/>
 
@@ -119,11 +125,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Dužina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/dark_green"/>
         </LinearLayout>
 
-        <!-- ORMAR -->
         <CheckBox
             android:id="@+id/closetCheck"
             android:layout_width="wrap_content"
@@ -144,6 +151,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Širina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/dark_green"/>
 
@@ -153,11 +162,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Dužina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/dark_green"/>
         </LinearLayout>
 
-        <!-- TV KOMODA (Ispravljeno: Dodata polja za unos) -->
         <CheckBox
             android:id="@+id/tvCheck"
             android:layout_width="wrap_content"
@@ -178,6 +188,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Širina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/dark_green"/>
 
@@ -187,11 +199,160 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Dužina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/dark_green"/>
         </LinearLayout>
 
-        <!-- BUTTON -->
+        <CheckBox
+            android:id="@+id/deskCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radni sto"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/deskWidth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Širina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/deskLength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dužina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/chairCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stolica"
+            android:textSize="20sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/chairWidth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Širina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/chairLength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dužina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/bookshelfCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Polica za knjige"
+            android:textSize="20sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/bookshelfWidth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Širina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/bookshelfLength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dužina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/kitchenCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kuhinja"
+            android:textSize="20sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/kitchenWidth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Širina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/kitchenLength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dužina (m)"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#7A7A7A"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/dark_green"/>
+        </LinearLayout>
+
         <Button
             android:id="@+id/analyzeBtn"
             android:layout_width="match_parent"

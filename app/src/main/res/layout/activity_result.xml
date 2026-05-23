@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,8 +9,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
-
-        <!-- TITLE -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,8 +26,6 @@
             android:textSize="18sp"
             android:textColor="@color/soft_green"
             android:layout_marginBottom="20dp"/>
-
-        <!-- SCORE CARD -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,10 +51,7 @@
                 android:textSize="50sp"
                 android:textColor="#4CAF50"
                 android:layout_marginTop="10dp"/>
-
         </LinearLayout>
-
-        <!-- RECOMMENDATIONS -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -100,8 +92,6 @@
                 android:textColor="@color/cream"/>
         </LinearLayout>
 
-        <!-- ROOM PLAN -->
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -128,12 +118,11 @@
                 android:layout_gravity="center"
                 android:background="@drawable/room_background">
 
-                <!-- BED -->
-
                 <LinearLayout
                     android:id="@+id/bedView"
                     android:layout_width="110dp"
                     android:layout_height="160dp"
+                    android:layout_alignParentLeft="true"
                     android:layout_marginLeft="18dp"
                     android:layout_marginTop="18dp"
                     android:orientation="vertical"
@@ -154,10 +143,7 @@
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"
                         android:layout_marginTop="45dp"/>
-
                 </LinearLayout>
-
-                <!-- CLOSET -->
 
                 <LinearLayout
                     android:id="@+id/closetView"
@@ -176,10 +162,7 @@
                         android:text="Ormar"
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"/>
-
                 </LinearLayout>
-
-                <!-- SOFA -->
 
                 <LinearLayout
                     android:id="@+id/sofaView"
@@ -198,10 +181,7 @@
                         android:text="Sofa"
                         android:textStyle="bold"
                         android:textColor="#222222"/>
-
                 </LinearLayout>
-
-                <!-- TABLE -->
 
                 <LinearLayout
                     android:id="@+id/tableView"
@@ -219,13 +199,110 @@
                         android:text="Sto"
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/tvView"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/tv_bg"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TV Komoda"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/deskView"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/desk_bg"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sto radni"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/chairView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@id/sofaView"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/chair_bg"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stolica"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bookshelfView"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bookshelf_bg"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Polica"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kitchenView"
+                    android:layout_width="130dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/kitchen_bg"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kuhinja"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"/>
                 </LinearLayout>
 
             </RelativeLayout>
-
         </LinearLayout>
-
     </LinearLayout>
-
 </ScrollView>

@@ -18,13 +18,37 @@
         android:fontFamily="@font/judson_bold"
         android:textStyle="bold"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Luxury Space Planning"
-        android:textColor="@color/dark_green"
-        android:textSize="18sp"
-        android:layout_marginTop="4dp"/>
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/profileBtn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/cream"
+            android:backgroundTint="@color/dark_green"/>
+
+        <Button
+            android:id="@+id/settingsBtn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="Settings"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/cream"
+            android:backgroundTint="@color/dark_green"/>
+
+    </LinearLayout>
 
     <!-- BUTTON -->
 
@@ -41,7 +65,16 @@
         android:layout_marginTop="28dp"/>
 
     <!-- PROJECTS -->
-
+    <EditText
+        android:id="@+id/searchInput"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Search projects..."
+        android:paddingLeft="18dp"
+        android:background="#FFFFFF"
+        android:textColor="@color/dark_green"
+        android:textColorHint="#565756"
+        android:layout_marginTop="18dp"/>
     <ListView
         android:id="@+id/projectListView"
         android:layout_width="match_parent"
@@ -51,8 +84,6 @@
         android:divider="@android:color/transparent"
         android:dividerHeight="14dp"
         android:background="@android:color/transparent"/>
-
-    <!-- LOGOUT -->
 
     <Button
         android:id="@+id/logoutBtn"

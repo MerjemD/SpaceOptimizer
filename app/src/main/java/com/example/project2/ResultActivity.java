@@ -27,14 +27,25 @@ public class ResultActivity extends AppCompatActivity {
     LinearLayout sofaView;
     LinearLayout tableView;
     LinearLayout closetView;
+    LinearLayout tvView;
+    LinearLayout deskView;
+    LinearLayout chairView;
+    LinearLayout bookshelfView;
+    LinearLayout kitchenView;
 
     double roomWidth;
     double roomLength;
+    String projectName;
 
     boolean bed;
     boolean sofa;
     boolean table;
     boolean closet;
+    boolean tv;
+    boolean desk;
+    boolean chair;
+    boolean bookshelf;
+    boolean kitchen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +57,10 @@ public class ResultActivity extends AppCompatActivity {
 
         scoreText = findViewById(R.id.scoreText);
         recommendationText = findViewById(R.id.recommendationText);
+        projectName =
+                getIntent().getStringExtra(
+                        "projectName"
+                );
         roomSizeText = findViewById(R.id.roomSizeText);
 
         saveBtn = findViewById(R.id.saveBtn);
@@ -56,6 +71,11 @@ public class ResultActivity extends AppCompatActivity {
         sofaView = findViewById(R.id.sofaView);
         tableView = findViewById(R.id.tableView);
         closetView = findViewById(R.id.closetView);
+        tvView = findViewById(R.id.tvView);
+        deskView = findViewById(R.id.deskView);
+        chairView = findViewById(R.id.chairView);
+        bookshelfView = findViewById(R.id.bookshelfView);
+        kitchenView = findViewById(R.id.kitchenView);
 
         // ROOM SIZE
 
@@ -131,6 +151,11 @@ public class ResultActivity extends AppCompatActivity {
         sofa = getIntent().getBooleanExtra("sofa", false);
         table = getIntent().getBooleanExtra("table", false);
         closet = getIntent().getBooleanExtra("closet", false);
+        tv = getIntent().getBooleanExtra("tv", false);
+        desk = getIntent().getBooleanExtra("desk", false);
+        chair = getIntent().getBooleanExtra("chair", false);
+        bookshelf = getIntent().getBooleanExtra("bookshelf", false);
+        kitchen = getIntent().getBooleanExtra("kitchen", false);
 
         // SHOW ELEMENTS
 
@@ -150,6 +175,26 @@ public class ResultActivity extends AppCompatActivity {
             closetView.setVisibility(View.VISIBLE);
         }
 
+        if (tv) {
+            tvView.setVisibility(View.VISIBLE);
+        }
+
+        if (desk) {
+            deskView.setVisibility(View.VISIBLE);
+        }
+
+        if (chair) {
+            chairView.setVisibility(View.VISIBLE);
+        }
+
+        if (bookshelf) {
+            bookshelfView.setVisibility(View.VISIBLE);
+        }
+
+        if (kitchen) {
+            kitchenView.setVisibility(View.VISIBLE);
+        }
+
         // ANALYSIS
 
         double roomArea =
@@ -161,6 +206,11 @@ public class ResultActivity extends AppCompatActivity {
         if (sofa) usedArea += 3;
         if (table) usedArea += 2;
         if (closet) usedArea += 3;
+        if (tv) usedArea += 1.5;
+        if (desk) usedArea += 2;
+        if (chair) usedArea += 0.8;
+        if (bookshelf) usedArea += 1.2;
+        if (kitchen) usedArea += 5;
 
         double percentage =
                 (usedArea / roomArea) * 100;
@@ -244,10 +294,10 @@ public class ResultActivity extends AppCompatActivity {
             SharedPreferences.Editor editor =
                     preferences.edit();
 
+
             editor.putString(
                     "projectName" + count,
-                    "Projekat "
-                            + count
+                    projectName
                             + " (" + finalScore + "%)"
             );
 
@@ -279,6 +329,31 @@ public class ResultActivity extends AppCompatActivity {
             editor.putBoolean(
                     "closet" + count,
                     closet
+            );
+
+            editor.putBoolean(
+                    "tv" + count,
+                    tv
+            );
+
+            editor.putBoolean(
+                    "desk" + count,
+                    desk
+            );
+
+            editor.putBoolean(
+                    "chair" + count,
+                    chair
+            );
+
+            editor.putBoolean(
+                    "bookshelf" + count,
+                    bookshelf
+            );
+
+            editor.putBoolean(
+                    "kitchen" + count,
+                    kitchen
             );
 
             editor.putInt(
